@@ -1,8 +1,8 @@
 * { margin:0;
     padding:0;}
 @font-face {
-	font-family:Lato-Thin;
-	src:url(../Fonts/lato-thin.ttf)
+	font-family:Walkway;
+	src:url(../Fonts/Walkway.ttf)
 }
 @font-face {
 	font-family:lane;
@@ -18,7 +18,7 @@ main#pageBody
 	h1 {
 		padding-top:3%;
 		text-align: center;
-		font-family: Lato-Thin;
+		font-family: Walkway;
     font-size: 32px;
     margin-bottom:2%;
 	}
@@ -93,7 +93,7 @@ main#pageBody
     background-image: url("../images/contactFooter.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    font-family: Lato-Thin;
+    font-family: Walkway;
     font-weight: lighter;
     clear:both;
     width:95%;
@@ -118,7 +118,7 @@ main#pageBody
     position: relative;
     bottom:0;
     font-size: 14px;
-    font-family: Lato-Thin;
+    font-family: Walkway;
     font-weight: bold;
     margin-bottom: 3%;
     margin-top:5%;
@@ -137,7 +137,7 @@ main#pageBody
   .skills{
   		margin-left: 2.5%;
       margin-right: 2.5%;
-      font-family: Lato-Thin;
+      font-family: Walkway;
       text-align: center;
       width:95%;
   }
@@ -175,7 +175,7 @@ main#pageBody
     margin-top: 3%;
     margin-bottom: 1.5%;
   	text-align: center;
-  	font-family: Lato-Thin;
+  	font-family: Walkway;
   	font-size:24px;
   	font-weight: bold;
   }
@@ -183,14 +183,14 @@ main#pageBody
   	margin-left: 2.5%;
     margin-right: 2.5%;
     border-bottom: 0.05em solid black;
-  	font-family: Lato-Thin;
+  	font-family: Walkway;
   	font-size:18px;
   	width:97%;
     text-align: left;
   }
   .intro p{
   	width:85%;
-  	font-family: Lato-Thin;
+  	font-family: Walkway;
   	font-weight: bold;
   	font-size:14px;
     margin:auto;
@@ -203,7 +203,7 @@ main#pageBody
     padding-top: 2%;
     width:100%;
   	text-align: center;
-  	font-family: Lato-Thin;
+  	font-family: Walkway;
   	font-weight: bold;
   	font-size:14px;
   }
@@ -275,12 +275,12 @@ main#pageBody
   .eduintro{
     width:95%;
     margin:auto;
-    font-family: Lato-Thin;
+    font-family: Walkway;
 		font-weight: bold;
   }
   .eduintro h2{
     margin-top: 5%;
-    font-family: Lato-Thin;
+    font-family: Walkway;
     padding-bottom: 10px;
     border-bottom: 0.05em solid black;
     font-size: 24px;
@@ -292,7 +292,7 @@ main#pageBody
     text-align: center;
   }
   .eduinfo{
-    font-family: Lato-Thin;
+    font-family: Walkway;
     text-align: center;
     font-weight: bold;
     font-size:14px;
@@ -344,7 +344,7 @@ main#pageBody
     background-size: 100%;
     background-repeat: no-repeat;
     clear:both;
-    font-family: Lato-Thin;
+    font-family: Walkway;
     font-weight: bold;
     width:95%;
     margin:auto;
@@ -368,7 +368,7 @@ main#pageBody
     padding-top: 2%;
     width:100%;
   	text-align: center;
-  	font-family: Lato-Thin;
+  	font-family: Walkway;
   	font-weight: bold;
   	font-size:14px;
   }
@@ -460,7 +460,7 @@ main#pageBody
     font-size: 24px;
 		text-align: center;
 		margin-left:1%;
-		font-family: Lato-Thin;
+		font-family: Walkway;
     margin-top: 5%;
     margin-bottom: 2%;
 	}
