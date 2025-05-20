@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link id ="favicon" rel="shortcut icon" href="images/tulogo.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href ="css/main.css">
+    <title>Contact</title>
+  </head>
+  <body>
+    <main id= "pageBody">
+
+      <!-- Main Header-->
+      <div class="header" id="myHeader">
+        <a href ="index.html">
+          <h1><strong>Kei Ting Tang</strong></h1>
+        </a>
+        <div class="menu">
+          <button class="menu-toggle" onclick="burgerMenu()">
+          </button>
+          <div id="links">
+            <a href="index.html">Home</a>
+            <a href="contact.html" style ="color:#B5B4B4">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Header image-->
+      <div class="headerimg" style="background-image:url(./images/contact/contactHeader.jpg)"></div>
+      <div class="Form">
+        <h2>Contact Me Here !</h2>
+        <form action="#" id="contactform">
+          <input type="text" name="firstname" placeholder="First Name" required>
+          <input type="text" name="lastname" placeholder="Last Name" required>
+          <input type="text" name="Email Address" placeholder="Email Address" required>
+          <textarea name ="message" form="contactform" placeholder="Type your message here"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <br>
+        Kei Ting Tang | 2025 | All Rights Reserved.
+        <div class="footersocial">
+          Follow Me Here :) ->
+          <a href="https://www.instagram.com/project_ely/" class="fa fa-instagram"></a>
+        </div>
+        <!--
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      -->
+      </footer>
+    </main>
+
+    <!--Scripts-->
+    <script src="js/stickyHeader.js"></script>
+    <script src="js/burgerMenu.js"></script>
+  </body>
+</html>
