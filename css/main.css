@@ -102,22 +102,22 @@ main#pageBody
     padding-bottom: 10%;
   }
   .contactFooter h2{
-    font-size:18px;
+    font-size:4vw;
     color: white;
-    padding-top: 5%;
+    padding-top: 10%;
     clear:both;
     margin-bottom: 5%;
     position: relative;
   }
   .contactFooter a{
-    font-size: 10px;
+    font-size: 2vw;
   }
   footer{
     clear:both;
     text-align: center;
     position: relative;
     bottom:0;
-    font-size: 14px;
+    font-size: 2.5vw;
     font-family: Walkway;
     font-weight: bold;
     margin-bottom: 3%;
@@ -127,9 +127,10 @@ main#pageBody
     color:#B5B4B4;
   }
   .footersocial a{
-    font-size:16px;
+    font-size:2.5vw;
     color:black;
     text-decoration: none;
+    margin-top: 0.5%;
     margin-bottom: 0.5%;
     }
 
@@ -143,7 +144,7 @@ main#pageBody
   }
   .skills h2{
   	padding-top:6%;
-    font-size:24px;
+    font-size:3.5vw;
     padding-bottom: 5%;
   }
   .skills p{
@@ -151,7 +152,7 @@ main#pageBody
     padding-bottom: 2%;
     width:30.8%;
     font-weight: bold;
-    font-size:16px;
+    font-size:2.5vw;
     display:inline-block;
   }
   .skill-Img{
@@ -167,34 +168,38 @@ main#pageBody
   	margin-left: 2.5%;
   	margin-right: 2.5%;
     background-size:cover;
-    background-color: #EBEBEB;
+  /* background-color: #EBEBEB;*/
+width:95%;
     color:black;
   }
   .intro h2{
-    margin-bottom: 1.5%;
-  	text-align: center;
+    margin-bottom: 1%;
+  	text-align: left;
   	font-family: Walkway;
-  	font-size:24px;
+  	font-size:3.5vw;
   	font-weight: bold;
+margin-left:2.5%;
   }
   .introinfo h2{
   	margin-left: 2.5%;
     margin-right: 2.5%;
     border-bottom: 0.05em solid black;
   	font-family: Walkway;
-  	font-size:18px;
-  	width:97%;
+  	font-size:3vw;
+  	width:55%;
     text-align: left;
   }
   .intro p{
-  	width:85%;
+  	width:95%;
   	font-family: Walkway;
   	font-weight: bold;
-  	font-size:14px;
+  	font-size:2vw;
+text-align: left;
     margin:auto;
+margin-bottom:5%;
   }
   .introinfo:last-child p{
-    padding-bottom: 2.5%;
+    padding-bottom: 0.5%;
   }
   .homeinfo{
     padding-top: 2%;
@@ -401,7 +406,7 @@ main#pageBody
     text-align: center;
     margin:0;
     margin-left: 1.5%;
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
   .header a{
     position:relative;
@@ -422,7 +427,7 @@ main#pageBody
     padding:0;
     margin-top:5.5%;
     margin-left: 1.5%;
-    font-size: 20px;
+    font-size: 1.25vw;
     vertical-align: bottom;
     display: inline-block;
   }
@@ -464,7 +469,7 @@ main#pageBody
   }
   /* Footer */
   .contactFooter h2{
-    font-size:36px;
+    font-size:3vw;
     padding-top:5%;
   }
   .contactFooter a{
@@ -474,9 +479,10 @@ main#pageBody
       height:15vh;
   }
   footer{
-    font-size: 24px;
+    font-size: 1.25vw;
   }
   .footersocial a{
-    font-size: 24px;
+    font-size: 1.25vw;
+	margin-top: 0.5%;	
   }
 }
