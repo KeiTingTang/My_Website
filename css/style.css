@@ -1,328 +1,480 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>KTT | Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.5, shrink-to-fit=no">
+/* Base */
+body {
+  line-height: 1.7;
+  color: #777;
+  font-weight: 300;
+  font-size: 1rem;
+  background: #000; }
 
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
+::-moz-selection {
+  background: #000;
+  color: #fff; }
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/lightgallery.min.css">
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="css/swiper.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
+::selection {
+  background: #000;
+  color: #fff; }
 
-</head>
-<body>
+  .headerimg{
+    height:45vw;
+    width:100%;
+    margin:auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    clear:both;
+    margin-bottom: 30px;
+  }
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a:hover {
+    text-decoration: none; }
 
-  <div class="site-wrap">
+.site-footer {
+  padding: 4em 0;
+  background: #333333; }
+  @media (min-width: 768px) {
+    .site-footer {
+      padding: 8em 0; } }
+  .site-footer p {
+    color: #737373; }
+  .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
+    color: #fff; }
+  .site-footer a {
+    color: #ffcd00; }
+    .site-footer a:hover {
+      color: white; }
+  .site-footer ul li {
+    margin-bottom: 10px; }
+  .site-footer .footer-heading {
+    font-size: 20px;
+    color: #fff; }
 
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
+.bg-image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+@media (max-width: 991.98px) {
+  .img-md-fluid {
+    max-width: 100%; } }
+
+@media (max-width: 991.98px) {
+  .display-1, .display-3 {
+    font-size: 3rem; } }
+
+.overlap-to-top {
+  margin-top: -150px; }
+
+/* Navbar */
+.site-navbar {
+  margin-bottom: 0px;
+  z-index: 9;
+  position: relative; }
+  .site-navbar.transparent {
+    background: transparent; }
+  .site-navbar.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; }
+  .site-navbar .site-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: -20px;
+    color: #fff; }
+  .site-navbar .site-navigation.border-bottom {
+    border-bottom: 1px solid #f3f3f4 !important; }
+  .site-navbar .site-navigation .site-menu {
+    margin-bottom: 0; }
+    .site-navbar .site-navigation .site-menu .active > a {
+      color: #ffcd00; }
+    .site-navbar .site-navigation .site-menu a {
+      text-decoration: none !important;
+      font-size: 13px;
+      display: inline-block; }
+    .site-navbar .site-navigation .site-menu > li {
+      display: inline-block;
+      float:left;
+      padding: 10px 5px; }
+      .site-navbar .site-navigation .site-menu > li > a {
+        padding: 10px 10px;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 15px;
+        text-decoration: none !important; }
+        .site-navbar .site-navigation .site-menu > li > a:hover {
+          color: #ffcd00; }
+    .site-navbar .site-navigation .site-menu .has-children {
+      position: relative; float:left; }
+      .site-navbar .site-navigation .site-menu .has-children > a {
+        position: relative;
+        padding-right: 20px; }
+        .site-navbar .site-navigation .site-menu .has-children > a:before {
+          position: absolute;
+          content: "\e313";
+          font-size: 16px;
+          top: 50%;
+          right: 0;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          font-family: 'icomoon'; }
+      .site-navbar .site-navigation .site-menu .has-children .dropdown {
+        visibility: hidden;
+        opacity: 0;
+        top: 100%;
+        position: absolute;
+        text-align: left;
+        border-top: 2px solid #ffcd00;
+        -webkit-box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+        border-left: 1px solid #edf0f5;
+        border-right: 1px solid #edf0f5;
+        border-bottom: 1px solid #edf0f5;
+        padding: 0px 0;
+        margin-top: 20px;
+        margin-left: 0px;
+        background: #fff;
+        -webkit-transition: 0.2s 0s;
+        -o-transition: 0.2s 0s;
+        transition: 0.2s 0s; }
+        .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top {
+          position: absolute; }
+          .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
+            bottom: 100%;
+            left: 20%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none; }
+          .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
+            border-color: rgba(136, 183, 213, 0);
+            border-bottom-color: #fff;
+            border-width: 10px;
+            margin-left: -10px; }
+        .site-navbar .site-navigation .site-menu .has-children .dropdown a {
+          font-size: 16px;
+          text-transform: none;
+          letter-spacing: normal;
+          -webkit-transition: 0s all;
+          -o-transition: 0s all;
+          transition: 0s all;
+          color: #343a40; }
+        .site-navbar .site-navigation .site-menu .has-children .dropdown .active > a {
+          color: #ffcd00 !important; }
+        .site-navbar .site-navigation .site-menu .has-children .dropdown > li {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          min-width: 200px; }
+          .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a {
+            padding: 9px 20px;
+            display: block; }
+            .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover {
+              background: #f4f5f9;
+              color: #25262a; }
+          .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > a:before {
+            content: "\e315";
+            right: 20px; }
+          .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > .dropdown, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > ul {
+            left: 100%;
+            top: 0; }
+          .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:active > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:focus > a {
+            background: #f4f5f9;
+            color: #25262a; }
+      .site-navbar .site-navigation .site-menu .has-children a {
+        text-transform: uppercase; }
+      .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
+        color: #ffcd00; }
+      .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
+        cursor: pointer; }
+        .site-navbar .site-navigation .site-menu .has-children:hover > .dropdown, .site-navbar .site-navigation .site-menu .has-children:focus > .dropdown, .site-navbar .site-navigation .site-menu .has-children:active > .dropdown {
+          -webkit-transition-delay: 0s;
+          -o-transition-delay: 0s;
+          transition-delay: 0s;
+          margin-top: 0px;
+          visibility: visible;
+          opacity: 1; }
+
+.site-menu[data-class="social"] a {
+  color: rgba(255, 255, 255, 0.5); }
+  .site-menu[data-class="social"] a:hover {
+    color: #fff; }
+
+.site-mobile-menu {
+  width: 300px;
+  position: fixed;
+  right: 0;
+  z-index: 2000;
+  padding-top: 20px;
+  background: #000;
+  height: calc(100vh);
+  -webkit-transform: translateX(110%);
+  -ms-transform: translateX(110%);
+  transform: translateX(110%);
+  -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: .3s all ease-in-out;
+  -o-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out; }
+  .offcanvas-menu .site-mobile-menu {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%); }
+  .site-mobile-menu .site-mobile-menu-header {
+    width: 100%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close {
+      float: right;
+      margin-top: 8px; }
+      .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span {
+        font-size: 30px;
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 0px;
+        line-height: 1;
+        cursor: pointer;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease; }
+        .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span:hover {
+          color: #25262; }
+    .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo {
+      float: left;
+      margin-top: 10px;
+      margin-left: 0px; }
+      .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a {
+        display: inline-block;
+        text-transform: uppercase; }
+        .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a img {
+          max-width: 70px; }
+        .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a:hover {
+          text-decoration: none; }
+  .site-mobile-menu .site-mobile-menu-body {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    padding: 0 20px 20px 20px;
+    height: calc(100vh - 52px);
+    padding-bottom: 150px; }
+  .site-mobile-menu .site-nav-wrap {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative; }
+    .site-mobile-menu .site-nav-wrap a {
+      padding: 10px 20px;
+      display: block;
+      position: relative;
+      color: #fff; }
+      .site-mobile-menu .site-nav-wrap a:hover {
+        color: #ffcd00; }
+    .site-mobile-menu .site-nav-wrap li {
+      position: relative;
+      display: block; }
+      .site-mobile-menu .site-nav-wrap li.active > a {
+        color: #ffcd00; }
+    .site-mobile-menu .site-nav-wrap .arrow-collapse {
+      position: absolute;
+      color:#fff;
+      right: 0px;
+      top: 10px;
+      z-index: 20;
+      width: 36px;
+      height: 36px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 50%; }
+      .site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
+        background: #ffcd00; color:#000; }
+      .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
+        font-size: 12px;
+        z-index: 20;
+        font-family: "icomoon";
+        content: "\f078";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) rotate(-180deg);
+        -ms-transform: translate(-50%, -50%) rotate(-180deg);
+        transform: translate(-50%, -50%) rotate(-180deg);
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease; }
+      .site-mobile-menu .site-nav-wrap .arrow-collapse.collapsed:before {
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+    .site-mobile-menu .site-nav-wrap > li {
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%; }
+      .site-mobile-menu .site-nav-wrap > li > a {
+        padding-left: 20px;
+        font-size: 20px; }
+      .site-mobile-menu .site-nav-wrap > li > ul {
+        padding: 0;
+        margin: 0;
+        list-style: none; }
+        .site-mobile-menu .site-nav-wrap > li > ul > li {
+          display: block; }
+          .site-mobile-menu .site-nav-wrap > li > ul > li > a {
+            padding-left: 40px;
+            font-size: 16px; }
+          .site-mobile-menu .site-nav-wrap > li > ul > li > ul {
+            padding: 0;
+            margin: 0; }
+            .site-mobile-menu .site-nav-wrap > li > ul > li > ul > li {
+              display: block; }
+              .site-mobile-menu .site-nav-wrap > li > ul > li > ul > li > a {
+                font-size: 16px;
+                padding-left: 60px; }
+    .site-mobile-menu .site-nav-wrap[data-class="social"] {
+      float: left;
+      width: 100%;
+      margin-top: 30px;
+      padding-bottom: 5em; }
+      .site-mobile-menu .site-nav-wrap[data-class="social"] > li {
+        width: auto; }
+        .site-mobile-menu .site-nav-wrap[data-class="social"] > li:first-child a {
+          padding-left: 15px !important; }
+
+@media (max-width: 991.98px) {
+  .display-4 {
+    font-size: 1.8rem; } }
 
 
+#date-countdown .countdown-block {
+  color: #b3b3b3; }
 
+#date-countdown .label {
+  font-size: 40px;
+  color: #000; }
 
-    <header class="site-navbar py-3" role="banner">
+.btn-outline-white {
+  border-color: #fff;
+  color: #fff;
+  border-width: 2px;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: .1em; }
+  .btn-outline-white:hover {
+    background: #fff;
+    color: #000; }
 
-      <div class="container-fluid">
-        <div class="row align-items-center">
+/*Home 3x3 Grid*/
+.image-wrap-2 {
+  display: block;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  margin-bottom: 30px; }
+  .image-wrap-2:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0);
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+  .image-wrap-2 .image-info {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .image-wrap-2:hover img {
+      -webkit-transform: scale(1.05);
+      transition: .4s all ease;}
+    .image-wrap-2 .image-info h2 {
+      color: #fff; }
+  .image-wrap-2:hover:before {
+    background: rgba(0, 0, 0, 0.6);
+    content: ""; }
 
-          <div class="col-6 col-xl-2" data-aos="fade-down">
-            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">Kei Ting Tang</a></h1>
-          </div>
-          <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
-            <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+    /* :: 15.0 Gallery CSS */
+    .alime-portfolio-area {
+      position: relative;
+      display:flex;
+      flex-wrap:wrap;
+      z-index: 1; }
+    .single-portfolio-content {
+      position: relative;
+      flex: 1 1 auto;
+      height: 40vh;
+      z-index: 1;
+      -webkit-transition: .6s all ease;
+      -o-transition: .6s all ease;
+      transition: .6s all ease;
+      overflow: hidden; }
+      .single-portfolio-content img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: .6s all ease;
+        -o-transition: .6s all ease;
+        transition: .6s all ease;
+        padding-bottom: 30px;}
+      .single-portfolio-content .hover-content {
+        -webkit-transition: .6s all ease;
+        -o-transition: .6s all ease;
+        transition: .6s all ease;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 10; }
+        .single-portfolio-content .hover-content a {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: 0;
+          margin-left: -26px;
+          z-index: 100;
+          display: inline-block;
+          width: 52px;
+          height: 52px;
+          border-radius: 50%;
+          background-color: #ffcd00;
+          text-align: center;
+          line-height: 52px;
+          font-family: 'icomoon';
+          font-size: 30px;
+          color: #000; }
+          .single-portfolio-content .hover-content a:hover, .single-portfolio-content .hover-content a:focus {
+            background-color: #ffcd00; }
+      .single-portfolio-content:hover img, .single-portfolio-content:focus img {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05); }
+      .single-portfolio-content:hover .hover-content, .single-portfolio-content:focus .hover-content {
+        opacity: 1;
+        visibility: visible; }
+        .single-portfolio-content:hover .hover-content a, .single-portfolio-content:focus .hover-content a {
+          margin-top: -26px; }
 
-              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li class="has-children">
-                  <a href="single.html">Gallery</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Nature</a></li>
-                    <li><a href="#">Portrait</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Architecture</a></li>
-                    <li><a href="#">Animals</a></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><a href="#">Travel</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
-            <div class="d-none d-xl-inline-block">
-              <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
-                <li>
-                  <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                </li>
-              </ul>
-            </div>
-            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
-
-          </div>
-
-        </div>
-      </div>
-
-    </header>
-
-
-    <div class="container-fluid" data-aos="fade" data-aos-delay="500">
-      <!-- Header image -->
-      <div class="headerimg" style="background-image:url(./images/home/homebg.jpg)"></div>
-      <div class="alime-portfolio-area">
-      <div class="row alime-portfolio">
-
-      <!-- Single Gallery Item -->
-      <div class="col-md-2 col-lg-5 single_gallery_item">
-          <div class="single-portfolio-content">
-            <img src="./images/Showcase/showcase_0.jpg" alt="">
-            <div class="hover-content">
-                <a href="./images/Showcase/showcase_0.jpg" class="portfolio-img"></a>
-              </div>
-          </div>
-      </div>
-
-      <!-- Single Gallery Item -->
-      <div class="col-md-3 col-lg-3 single_gallery_item">
-          <div class="single-portfolio-content">
-            <img src="./images/Showcase/showcase_1.jpg" alt="">
-            <div class="hover-content">
-                <a href="./images/Showcase/showcase_1.jpg" class="portfolio-img"></a>
-              </div>
-          </div>
-      </div>
-
-      <!-- Single Gallery Item -->
-      <div class="col-md-7 col-lg-4 single_gallery_item">
-          <div class="single-portfolio-content">
-              <img src="./images/Showcase/showcase_2.jpg" alt="">
-              <div class="hover-content">
-                  <a href="./images/Showcase/showcase_2.jpg" class="portfolio-img"></a>
-              </div>
-          </div>
-      </div>
-
-      <!-- Single Gallery Item -->
-      <div class="col-md-4 col-lg-4 single_gallery_item">
-          <div class="single-portfolio-content">
-              <img src="./images/Showcase/showcase_3.jpg" alt="">
-              <div class="hover-content">
-                  <a href="./images/Showcase/showcase_3.jpg" class="portfolio-img"></a>
-              </div>
-          </div>
-      </div>
-
-      <!-- Single Gallery Item -->
-      <div class="col-md-3 col-lg-3 single_gallery_item">
-          <div class="single-portfolio-content">
-            <img src="./images/Showcase/showcase_4.jpg" alt="">
-            <div class="hover-content">
-                <a href="./images/Showcase/showcase_4.jpg" class="portfolio-img"></a>
-              </div>
-          </div>
-      </div>
-
-      <!-- Single Gallery Item -->
-      <div class="col-md-5 col-lg-2 single_gallery_item">
-          <div class="single-portfolio-content">
-            <img src="./images/Showcase/showcase_5.jpg" alt="">
-            <div class="hover-content">
-                <a href="./images/Showcase/showcase_5.jpg" class="portfolio-img"></a>
-              </div>
-          </div>
-      </div>
-      <!-- Single Gallery Item -->
-      <div class="col-md-7 col-lg-3 single_gallery_item">
-          <div class="single-portfolio-content">
-            <img src="./images/Showcase/showcase_6.jpg" alt="">
-            <div class="hover-content">
-                <a href="./images/Showcase/showcase_6.jpg" class="portfolio-img"></a>
-              </div>
-          </div>
-      </div>
-
-      <!-- Single Gallery Item -->
-      <div class="col-md-5 col-lg-2 single_gallery_item">
-          <div class="single-portfolio-content">
-            <img src="./images/Showcase/showcase_7.jpg" alt="">
-            <div class="hover-content">
-                <a href="./images/Showcase/showcase_7.jpg" class="portfolio-img"></a>
-              </div>
-          </div>
-      </div>
-
-      <!-- Single Gallery Item -->
-      <div class="col-md-6 col-lg-6 single_gallery_item">
-          <div class="single-portfolio-content">
-            <img src="./images/Showcase/showcase_8.jpg" alt="">
-            <div class="hover-content">
-                <a href="./images/Showcase/showcase_8.jpg" class="portfolio-img"></a>
-              </div>
-          </div>
-      </div>
-
-      <!-- Single Gallery Item -->
-      <div class="col-md-6 col-lg-4 single_gallery_item">
-          <div class="single-portfolio-content">
-            <img src="./images/Showcase/showcase_9.jpg" alt="">
-            <div class="hover-content">
-                <a href="./images/Showcase/showcase_9.jpg" class="portfolio-img"></a>
-              </div>
-          </div>
-      </div>
-
-
-    </div>
-    </div>
-
-      <div class="row">
-        <div class="col-xs-3 col-md-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">Travel</h2>
-              <a href="single" class="btn btn-outline-white py-2 px-4">View Here</a>
-            </div>
-            <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-          </div>
-
-        </div>
-        <div class="col-xs-3 col-md-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">Architecture</h2>
-              <a href="single" class="btn btn-outline-white py-2 px-4">View Here</a>
-            </div>
-            <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-xs-3 col-md-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">B&W</h2>
-              <a href="single" class="btn btn-outline-white py-2 px-4">View Here</a>
-            </div>
-            <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-          </div>
-        </div>
-
-        <div class="col-xs-3 col-md-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">Street</h2>
-              <a href="single" class="btn btn-outline-white py-2 px-4">View Here</a>
-            </div>
-            <img src="images/img_4.jpg" alt="Image" class="img-fluid">
-          </div>
-        </div>
-
-        <div class="col-xs-3 col-md-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">Concerts</h2>
-              <a href="single" class="btn btn-outline-white py-2 px-4">View Here</a>
-            </div>
-            <img src="images/img_5.jpg" alt="Image" class="img-fluid">
-          </div>
-        </div>
-
-        <div class="col-xs-3 col-md-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">Portraits</h2>
-              <a href="single" class="btn btn-outline-white py-2 px-4">View Here</a>
-            </div>
-            <img src="images/img_6.jpg" alt="Image" class="img-fluid">
-          </div>
-        </div>
-
-        <div class="col-xs-3 col-md-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">Animals</h2>
-              <a href="single" class="btn btn-outline-white py-2 px-4">View Here</a>
-            </div>
-            <img src="images/img_7.jpg" alt="Image" class="img-fluid">
-          </div>
-        </div>
-
-        <div class="col-xs-3 col-md-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">Nature</h2>
-              <a href="single" class="btn btn-outline-white py-2 px-4">View Here</a>
-            </div>
-            <img src="images/img_8.jpg" alt="Image" class="img-fluid">
-          </div>
-        </div>
-
-        <div class="col-xs-3 col-md-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">Misc</h2>
-              <a href="single" class="btn btn-outline-white py-2 px-4">View Here</a>
-            </div>
-            <img src="images/img_9.jpg" alt="Image" class="img-fluid">
-          </div>
-        </div>
-
-      </div>
-    </div>
-    </div>
-
-    <div class="footer py-4">
-      <div class="container-fluid text-center">
-        <p>
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | Kei Ting Tang<br>
-          Original template by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-        </p>
-      </div>
-    </div>
-
-
-
-
-
-  </div>
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/aos.js"></script>
-
-  <script src="js/jquery.mousewheel.min.js"></script>
-
-  <script src="js/main.js"></script>
-  <script src="js/default-assets/active.js"></script>
-
-</body>
-</html>
+          @media only screen and (max-width: 767px) {
+              .single-portfolio-content {
+                height:30vh;
+              }
+          }
