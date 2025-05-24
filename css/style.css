@@ -17,6 +17,7 @@ body {
   .headerimg{
     height:45vw;
     width:100%;
+    object-position: 50% 100%;
     margin:auto;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -456,14 +457,13 @@ a {
           width: 52px;
           height: 52px;
           border-radius: 50%;
-          background-color: #ffcd00;
+          background-color: #000;
           text-align: center;
           line-height: 52px;
-          font-family: 'icomoon';
-          font-size: 30px;
-          color: #000; }
+          font-size: 40px;
+          color: #fff; }
           .single-portfolio-content .hover-content a:hover, .single-portfolio-content .hover-content a:focus {
-            background-color: #ffcd00; }
+            background-color: #ffcd00; color:#000; }
       .single-portfolio-content:hover img, .single-portfolio-content:focus img {
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
