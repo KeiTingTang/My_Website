@@ -476,6 +476,6 @@ a {
 
           @media only screen and (max-width: 1080px) {
               .single-portfolio-content {
-                height:20vh;
+                height:25vw;
               }
           }
