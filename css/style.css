@@ -413,7 +413,7 @@ a {
     .single-portfolio-content {
       position: relative;
       flex: 1 1 auto;
-      height: 45vh;
+      height: 25vw;
       z-index: 1;
       -webkit-transition: .6s all ease;
       -o-transition: .6s all ease;
@@ -472,11 +472,11 @@ a {
 
           @media only screen and (max-width: 1080px) {
               .single-portfolio-content {
-                height:40vw;
+                height:25vw;
               }
           }
           @media only screen and (max-width: 800px) {
               .single-portfolio-content {
-                height:50vw;
+                height:30vw;
               }
           }
