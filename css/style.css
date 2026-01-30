@@ -472,11 +472,11 @@ a {
 
           @media only screen and (max-width: 1080px) {
               .single-portfolio-content {
-                height:25vw;
+                height:30vh;
               }
           }
           @media only screen and (max-width: 800px) {
               .single-portfolio-content {
-                height:30vw;
+                height:30vh;
               }
           }
