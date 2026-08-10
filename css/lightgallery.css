@@ -22,12 +22,13 @@
 }
 
 .lg-actions .lg-next, .lg-actions .lg-prev {
-  background-color: rgba(0, 0, 0, 0.45);
+  display: none;
+  background-color: rgba(0, 0, 0, 0);
   border-radius: 2px;
-  color: #999;
+  color: white;
   cursor: pointer;
   display: block;
-  font-size: 22px;
+  font-size: 0px;
   margin-top: -10px;
   padding: 8px 10px 9px;
   position: absolute;
@@ -41,7 +42,7 @@
   opacity: 0.5;
 }
 .lg-actions .lg-next:hover, .lg-actions .lg-prev:hover {
-  color: #FFF;
+  color: #ffcd00;
 }
 .lg-actions .lg-next {
   right: 20px;
@@ -158,6 +159,7 @@
 }
 
 .lg-toolbar {
+  display:none;
   z-index: 1082;
   left: 0;
   position: absolute;
@@ -266,7 +268,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-thumb-outer {
-  background-color: #0D0A0A;
+  background-color: black;
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -727,7 +729,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   width: auto;
 }
 .lg-outer #lg-share {
-  position: relative;
+  display: none;
 }
 .lg-outer #lg-share:after {
   content: "\e80d";
@@ -870,7 +872,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: inline-block;
   vertical-align: middle;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 90%;
+  margin-bottom: 3%;
   width: auto !important;
   height: auto !important;
 }
