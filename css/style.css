@@ -223,7 +223,7 @@ a {
 .site-menu[data-class="social"] a {
   color: rgba(255, 255, 255, 0.5); }
   .site-menu[data-class="social"] a:hover {
-    color: #fff; }
+    color: #ffcd00; }
 
 .site-mobile-menu {
   width: 300px;
