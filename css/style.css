@@ -6,6 +6,17 @@ body {
   font-size: 1rem;
   background: #000; }
 
+.col-12 p {
+  text-overflow: inherit;
+  font-size: 2rem;
+  margin: 0 20%;
+}
+
+.col-12 h2 {
+  color: #ffcd00;
+  font-size: 3.5rem;
+}
+
 ::-moz-selection {
   background: #000;
   color: #fff; }
@@ -413,7 +424,7 @@ a {
     .single-portfolio-content {
       position: relative;
       flex: 1 1 auto;
-      height: 25vw;
+      height: 45vh;
       z-index: 1;
       -webkit-transition: .6s all ease;
       -o-transition: .6s all ease;
@@ -477,6 +488,6 @@ a {
           }
           @media only screen and (max-width: 800px) {
               .single-portfolio-content {
-                height:40vh;
+                height:50vh;
               }
           }
