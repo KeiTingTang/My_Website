@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/lightgallery.min.css">
+  <link rel="stylesheet" href="css/lightgallery.css">
   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="css/swiper.css">
@@ -85,10 +85,10 @@
 
       <!--Showcase Gallery-->
       <div class="alime-portfolio-area">
-      <div class="row alime-portfolio">
 
       <!-- Row 1-->
-      <div class="col-md-9 col-lg-5 single_gallery_item">
+      <div class="row" id="lightgallery">
+      <div class="col-md-9 col-lg-5 single_gallery_item" data-src="./images/Showcase/showcase_0.webp">
           <div class="single-portfolio-content">
             <img src="./images/Showcase/showcase_0.webp" alt="">
             <div class="hover-content">
@@ -97,7 +97,7 @@
           </div>
       </div>
 
-      <div class="col-md-3 col-lg-2 single_gallery_item">
+      <div class="col-md-3 col-lg-2 single_gallery_item" data-src="./images/Showcase/showcase_1.webp">
           <div class="single-portfolio-content">
             <img src="./images/Showcase/showcase_1.webp" alt="">
             <div class="hover-content">
@@ -106,7 +106,7 @@
           </div>
       </div>
 
-      <div class="col-md-12 col-lg-5 single_gallery_item">
+      <div class="col-md-12 col-lg-5 single_gallery_item" data-src="./images/Showcase/showcase_2.webp">
           <div class="single-portfolio-content">
               <img src="./images/Showcase/showcase_2.webp" alt="">
               <div class="hover-content">
@@ -116,7 +116,7 @@
       </div>
 
         <!-- Row 2-->
-      <div class="col-md-3 col-lg-3 single_gallery_item">
+      <div class="col-md-3 col-lg-3 single_gallery_item" data-src="./images/Showcase/showcase_3.webp">
           <div class="single-portfolio-content">
               <img src="./images/Showcase/showcase_3.webp" alt="">
               <div class="hover-content">
@@ -126,7 +126,7 @@
       </div>
 
 
-      <div class="col-md-3 col-lg-3 single_gallery_item">
+      <div class="col-md-3 col-lg-3 single_gallery_item" data-src="./images/Showcase/showcase_4.webp">
           <div class="single-portfolio-content">
             <img src="./images/Showcase/showcase_4.webp" alt="">
             <div class="hover-content">
@@ -136,7 +136,7 @@
       </div>
 
 
-      <div class="col-md-3 col-lg-3 single_gallery_item">
+      <div class="col-md-3 col-lg-3 single_gallery_item" data-src="./images/Showcase/showcase_5.webp">
           <div class="single-portfolio-content">
             <img src="./images/Showcase/showcase_5.webp" alt="">
             <div class="hover-content">
@@ -145,7 +145,7 @@
           </div>
       </div>
 
-      <div class="col-md-3 col-lg-3 single_gallery_item">
+      <div class="col-md-3 col-lg-3 single_gallery_item" data-src="./images/Showcase/showcase_6.webp">
           <div class="single-portfolio-content">
             <img src="./images/Showcase/showcase_6.webp" alt="">
             <div class="hover-content">
@@ -155,7 +155,7 @@
       </div>
 
       <!-- Row 3-->
-      <div class="col-md-2 col-lg-2 single_gallery_item">
+      <div class="col-md-2 col-lg-2 single_gallery_item" data-src="./images/Showcase/showcase_7.webp">
           <div class="single-portfolio-content">
             <img src="./images/Showcase/showcase_7.webp" alt="">
             <div class="hover-content">
@@ -164,7 +164,7 @@
           </div>
       </div>
 
-      <div class="col-md-8 col-lg-8 single_gallery_item">
+      <div class="col-md-8 col-lg-8 single_gallery_item" data-src="./images/Showcase/showcase_8.webp">
           <div class="single-portfolio-content">
             <img src="./images/Showcase/showcase_8.webp" alt="">
             <div class="hover-content">
@@ -174,7 +174,7 @@
       </div>
 
 
-      <div class="col-md-2 col-lg-2 single_gallery_item">
+      <div class="col-md-2 col-lg-2 single_gallery_item" data-src="./images/Showcase/showcase_9.webp">
           <div class="single-portfolio-content">
             <img src="./images/Showcase/showcase_9.webp" alt="">
             <div class="hover-content">
@@ -302,16 +302,21 @@
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
+
   <script src="js/swiper.min.js"></script>
   <script src="js/aos.js"></script>
-  <script src="js/jquery.mousewheel.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/default-assets/active.js"></script>
+
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/lightgallery-all.min.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#lightgallery').lightGallery();
+    });
+  </script>
 
 </body>
 </html>
